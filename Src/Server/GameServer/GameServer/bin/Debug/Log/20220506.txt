@@ -1,0 +1,40 @@
+
+2022-05-06 16:57:54,532 [1] [INFO ] [GameServer] ：Game Server Init
+2022-05-06 16:57:55,924 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-05-06 16:57:56,611 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:奥特兰
+2022-05-06 16:57:56,615 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:野外1
+2022-05-06 16:57:56,615 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:野外2
+2022-05-06 16:57:56,616 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:副本1
+2022-05-06 16:57:56,618 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-05-06 16:57:56,731 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,731 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,732 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,732 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,732 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,732 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,731 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,731 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:57:56,837 [1] [WARN ] [GameServer] ：NetService Started
+2022-05-06 16:58:02,542 [1] [INFO ] [GameServer] ：Game Server Init
+2022-05-06 16:58:02,876 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-05-06 16:58:03,017 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:奥特兰
+2022-05-06 16:58:03,019 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:野外1
+2022-05-06 16:58:03,019 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:野外2
+2022-05-06 16:58:03,019 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:副本1
+2022-05-06 16:58:03,021 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-05-06 16:58:03,058 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,058 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,058 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,058 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,059 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,059 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,059 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,061 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-05-06 16:58:03,130 [1] [WARN ] [GameServer] ：NetService Started
+2022-05-06 16:58:51,337 [3] [WARN ] [GameServer] ：Client[127.0.0.1:64178]] Connected
+2022-05-06 16:58:51,446 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-05-06 16:58:51,581 [5] [INFO ] [GameServer] ：UserLoginRequest: User:qwe  Pass:123
+2022-05-06 16:59:13,425 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2022-05-06 16:59:13,431 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:2:ppp Map:1
+2022-05-06 16:59:13,437 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:0
+2022-05-06 17:00:14,775 [3] [WARN ] [GameServer] ：Client[] Disconnected

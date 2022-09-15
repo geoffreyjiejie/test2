@@ -1,0 +1,198 @@
+
+2022-06-11 12:43:23,442 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-11 12:43:25,865 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-11 12:43:27,099 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-11 12:43:27,107 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-11 12:43:27,107 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-11 12:43:27,108 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-11 12:43:27,109 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-11 12:43:27,180 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,181 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,182 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,182 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,182 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,182 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,182 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,182 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 12:43:27,284 [1] [WARN ] [GameServer] ：NetService Started
+2022-06-11 12:44:26,474 [4] [WARN ] [GameServer] ：Client[127.0.0.1:51688]] Connected
+2022-06-11 12:44:26,684 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 12:44:26,882 [6] [INFO ] [GameServer] ：UserLoginRequest: User:asd  Pass:123
+2022-06-11 12:44:31,628 [6] [ERROR] [GameServer] ：Message handler exception:System.Data.SqlClient.SqlException (0x80131904): 列名 'Bag_Id' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+ClientConnectionId:dde889e5-6bea-4829-94bc-b35e34e680a0
+Error Number:207,State:1,Class:16, 执行命令定义时出错。有关详细信息，请参阅内部异常。, EntityFramework,    在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.TPlayer_BA74F448DC16EFDD782E85FAF4F35C1DC949E2D92BB046D7CD91E2429AFD571A.get_Characters()
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 64
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2022-06-11 15:04:47,335 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-11 15:04:48,001 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-11 15:04:48,508 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-11 15:04:48,513 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-11 15:04:48,513 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-11 15:04:48,513 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-11 15:04:48,514 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-11 15:04:48,559 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,559 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,559 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,559 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,559 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,559 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,559 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,559 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:04:48,631 [1] [WARN ] [GameServer] ：NetService Started
+2022-06-11 15:05:07,932 [3] [WARN ] [GameServer] ：Client[127.0.0.1:62080]] Connected
+2022-06-11 15:05:07,971 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 15:05:08,107 [5] [INFO ] [GameServer] ：UserLoginRequest: User:asd  Pass:123
+2022-06-11 15:05:11,208 [5] [ERROR] [GameServer] ：Message handler exception:System.Data.SqlClient.SqlException (0x80131904): 列名 'Bag_Id' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+ClientConnectionId:261568b9-2e8e-4c35-b719-27094aaafe06
+Error Number:207,State:1,Class:16, 执行命令定义时出错。有关详细信息，请参阅内部异常。, EntityFramework,    在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.TPlayer_BA74F448DC16EFDD782E85FAF4F35C1DC949E2D92BB046D7CD91E2429AFD571A.get_Characters()
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 64
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2022-06-11 15:05:21,243 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2022-06-11 15:07:49,903 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-11 15:07:50,133 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-11 15:07:50,385 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-11 15:07:50,387 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-11 15:07:50,387 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-11 15:07:50,387 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-11 15:07:50,388 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-11 15:07:50,459 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,459 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,459 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,459 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,461 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,461 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,461 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,461 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:07:50,495 [1] [WARN ] [GameServer] ：NetService Started
+2022-06-11 15:10:34,374 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-11 15:10:34,580 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-11 15:10:34,817 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-11 15:10:34,818 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-11 15:10:34,819 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-11 15:10:34,819 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-11 15:10:34,820 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-11 15:10:34,831 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,831 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,860 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,860 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,860 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,860 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,860 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,860 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:10:34,932 [1] [WARN ] [GameServer] ：NetService Started
+2022-06-11 15:35:28,940 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-11 15:35:29,994 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-11 15:35:30,577 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-11 15:35:30,580 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-11 15:35:30,580 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-11 15:35:30,580 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-11 15:35:30,581 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-11 15:35:30,657 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,658 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,658 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,658 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,658 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,658 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,658 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,659 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-11 15:35:30,762 [1] [WARN ] [GameServer] ：NetService Started
+2022-06-11 15:36:01,645 [3] [WARN ] [GameServer] ：Client[127.0.0.1:62584]] Connected
+2022-06-11 15:36:01,685 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 15:36:01,829 [5] [INFO ] [GameServer] ：UserRegisterRequest: User:asd  Pass:123
+2022-06-11 15:36:13,622 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 15:36:13,625 [6] [INFO ] [GameServer] ：UserLoginRequest: User:qwe  Pass:123
+2022-06-11 15:36:20,581 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 15:36:20,582 [5] [INFO ] [GameServer] ：UserLoginRequest: User:asd  Pass:123
+2022-06-11 15:36:50,044 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:15
+2022-06-11 15:36:50,047 [5] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:母  Class:Wizard
+2022-06-11 15:36:53,743 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2022-06-11 15:36:53,745 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:母 Map:1
+2022-06-11 15:36:53,751 [5] [INFO ] [GameServer] ：HashItem:[2]False
+2022-06-11 15:36:53,752 [5] [INFO ] [GameServer] ：[1]AddItem[ID:1,Count:200]addCount:200
+2022-06-11 15:36:53,752 [5] [INFO ] [GameServer] ：[1]AddItem[ID:2,Count:100]addCount:100
+2022-06-11 15:36:53,753 [5] [INFO ] [GameServer] ：[1]AddItem[ID:3,Count:30]addCount:30
+2022-06-11 15:36:53,753 [5] [INFO ] [GameServer] ：[1]AddItem[ID:4,Count:120]addCount:120
+2022-06-11 15:36:53,753 [5] [INFO ] [GameServer] ：[1]GetItem[2:ID:2,Count:100]
+2022-06-11 15:36:53,753 [5] [INFO ] [GameServer] ：Item:[2][ID:2,Count:100]
+2022-06-11 15:36:53,982 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2022-06-11 15:38:35,261 [3] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId: 1
+2022-06-11 15:38:35,263 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2022-06-11 15:44:14,721 [3] [WARN ] [GameServer] ：Client[127.0.0.1:60821]] Connected
+2022-06-11 15:44:14,779 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 15:44:14,779 [5] [INFO ] [GameServer] ：UserLoginRequest: User:asd  Pass:123
+2022-06-11 15:44:19,607 [24] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2022-06-11 15:44:19,607 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:母 Map:1
+2022-06-11 15:44:19,608 [5] [INFO ] [GameServer] ：HashItem:[2]True
+2022-06-11 15:44:19,608 [5] [INFO ] [GameServer] ：[1]GetItem[2:ID:2,Count:100]
+2022-06-11 15:44:19,608 [5] [INFO ] [GameServer] ：Item:[2][ID:2,Count:100]
+2022-06-11 15:44:19,611 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2022-06-11 15:44:59,072 [24] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId: 2
+2022-06-11 15:44:59,073 [24] [WARN ] [GameServer] ：Client[] Disconnected
+2022-06-11 15:45:53,820 [25] [WARN ] [GameServer] ：Client[127.0.0.1:53040]] Connected
+2022-06-11 15:45:53,880 [28] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 15:45:53,880 [5] [INFO ] [GameServer] ：UserLoginRequest: User:asd  Pass:123
+2022-06-11 15:45:56,018 [28] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2022-06-11 15:45:56,019 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:母 Map:1
+2022-06-11 15:45:56,019 [5] [INFO ] [GameServer] ：HashItem:[2]True
+2022-06-11 15:45:56,020 [5] [INFO ] [GameServer] ：[1]GetItem[2:ID:2,Count:100]
+2022-06-11 15:45:56,020 [5] [INFO ] [GameServer] ：Item:[2][ID:2,Count:100]
+2022-06-11 15:45:56,021 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:3
+2022-06-11 15:47:03,028 [28] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId: 3
+2022-06-11 15:47:03,029 [28] [WARN ] [GameServer] ：Client[] Disconnected
+2022-06-11 15:51:15,763 [28] [WARN ] [GameServer] ：Client[127.0.0.1:61340]] Connected
+2022-06-11 15:51:15,822 [28] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-11 15:51:15,822 [5] [INFO ] [GameServer] ：UserLoginRequest: User:asd  Pass:123
+2022-06-11 15:51:20,254 [28] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2022-06-11 15:51:20,254 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:母 Map:1
+2022-06-11 15:51:20,255 [5] [INFO ] [GameServer] ：HashItem:[2]True
+2022-06-11 15:51:20,255 [5] [INFO ] [GameServer] ：[1]GetItem[2:ID:2,Count:100]
+2022-06-11 15:51:20,256 [5] [INFO ] [GameServer] ：Item:[2][ID:2,Count:100]
+2022-06-11 15:51:20,257 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:4
+2022-06-11 15:51:35,929 [28] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId: 4
+2022-06-11 15:51:35,930 [28] [WARN ] [GameServer] ：Client[] Disconnected

@@ -1,0 +1,101 @@
+
+2022-06-10 22:00:54,391 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-10 22:00:55,210 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-10 22:03:10,091 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-10 22:03:10,325 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-10 22:17:01,995 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-10 22:17:02,225 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-10 22:17:02,505 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-10 22:17:02,509 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-10 22:17:02,509 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-10 22:17:02,510 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-10 22:17:02,519 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-10 22:17:02,571 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,571 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,571 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,571 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,577 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,610 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,610 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,610 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:17:02,639 [1] [WARN ] [GameServer] ：NetService Started
+2022-06-10 22:17:25,325 [3] [WARN ] [GameServer] ：Client[127.0.0.1:58148]] Connected
+2022-06-10 22:17:25,417 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-10 22:17:25,583 [5] [INFO ] [GameServer] ：UserLoginRequest: User:asd  Pass:123
+2022-06-10 22:17:28,326 [5] [ERROR] [GameServer] ：Message handler exception:System.Data.SqlClient.SqlException (0x80131904): 列名 'Bag_Id' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+ClientConnectionId:2239a375-6985-4dc3-ada0-cc747fd27f77
+Error Number:207,State:1,Class:16, 执行命令定义时出错。有关详细信息，请参阅内部异常。, EntityFramework,    在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.TPlayer_BA74F448DC16EFDD782E85FAF4F35C1DC949E2D92BB046D7CD91E2429AFD571A.get_Characters()
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 64
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2022-06-10 22:17:47,547 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2022-06-10 22:22:42,134 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-10 22:22:42,333 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-10 22:22:42,595 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-10 22:22:42,598 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-10 22:22:42,598 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-10 22:22:42,598 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-10 22:22:42,599 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-10 22:22:42,670 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,670 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,671 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,671 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,701 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,701 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,701 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,701 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-10 22:22:42,773 [1] [WARN ] [GameServer] ：NetService Started
+2022-06-10 22:23:00,451 [3] [WARN ] [GameServer] ：Client[127.0.0.1:58464]] Connected
+2022-06-10 22:23:00,503 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2022-06-10 22:23:00,610 [5] [INFO ] [GameServer] ：UserLoginRequest: User:qwe  Pass:123
+2022-06-10 22:23:02,669 [5] [ERROR] [GameServer] ：Message handler exception:System.Data.SqlClient.SqlException (0x80131904): 列名 'Bag_Id' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+ClientConnectionId:d8995ba1-b670-4ec5-b2b6-a343392322db
+Error Number:207,State:1,Class:16, 执行命令定义时出错。有关详细信息，请参阅内部异常。, EntityFramework,    在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.TPlayer_BA74F448DC16EFDD782E85FAF4F35C1DC949E2D92BB046D7CD91E2429AFD571A.get_Characters()
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 64
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\Projects\Extremeworld\Src\ismmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2022-06-10 22:25:28,247 [3] [WARN ] [GameServer] ：Client[] Disconnected

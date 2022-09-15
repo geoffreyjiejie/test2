@@ -1,0 +1,29 @@
+
+2022-06-09 13:07:46,924 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-09 13:07:48,962 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-09 13:12:07,076 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-09 13:12:07,271 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-09 13:13:05,745 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-09 13:13:05,930 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-09 13:19:33,085 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-09 13:19:33,361 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-09 13:57:34,741 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-09 13:57:36,429 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-09 14:13:41,963 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-09 14:13:42,159 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-09 14:14:18,405 [1] [INFO ] [GameServer] ：Game Server Init
+2022-06-09 14:14:18,585 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2022-06-09 14:14:18,812 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2022-06-09 14:14:18,817 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2022-06-09 14:14:18,817 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2022-06-09 14:14:18,818 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日余晖
+2022-06-09 14:14:18,819 [1] [WARN ] [GameServer] ：Starting Listener...
+2022-06-09 14:14:18,880 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,880 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,881 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,882 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,881 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,881 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,882 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,881 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2022-06-09 14:14:18,939 [1] [WARN ] [GameServer] ：NetService Started

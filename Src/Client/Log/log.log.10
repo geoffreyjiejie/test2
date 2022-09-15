@@ -1,0 +1,68 @@
+2022-07-25 13:27:14,036 [ 1] INFO  Unity: LoadingManager start
+2022-07-25 13:27:21,500 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-25 13:27:31,821 [ 1] INFO  Unity: UserLoginRequest::user :asd psw:qwe
+2022-07-25 13:27:31,863 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-07-25 13:27:31,864 [ 1] INFO  Unity: DoConnect
+2022-07-25 13:27:31,866 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-25 13:27:31,868 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-07-25 13:27:31,898 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-25 13:27:54,043 [ 1] INFO  Unity: UserLoginRequest::user :asd psw:qwe
+2022-07-25 13:28:04,479 [ 1] INFO  Unity: UserLoginRequest::user :asd psw:qwe
+2022-07-25 13:28:26,269 [ 1] INFO  Unity: UserLoginRequest::user :asd psw:qwe
+2022-07-25 13:28:34,761 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in D:\Projects\Extremeworld\Src\ismmorpg\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+
+2022-07-25 13:28:34,849 [ 1] INFO  Unity: DoConnect
+2022-07-25 13:28:34,851 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-25 13:28:34,853 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-07-25 13:28:36,887 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-07-25 13:28:36,985 [ 1] INFO  Unity: DoConnect
+2022-07-25 13:28:36,986 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-25 13:28:36,988 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2022-07-25 13:28:38,529 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-25 13:28:43,628 [ 1] INFO  Unity: UserLoginRequest::user :asd psw:qwe
+2022-07-25 13:28:49,821 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-07-25 13:28:49,853 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-25 13:28:54,018 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-25 13:29:04,974 [ 1] INFO  Unity: Select Char:[6]呃呃[Wizard]
+2022-07-25 13:29:06,500 [ 1] INFO  Unity: Select Char:[5]发发发[Warrior]
+2022-07-25 13:29:07,536 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-07-25 13:29:08,100 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-07-25 13:29:08,142 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-07-25 13:29:08,144 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-07-25 13:29:08,482 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-07-25 13:29:08,510 [ 1] INFO  Unity: AddCharacter:1:发发发 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-25 13:29:08,554 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-25 13:29:10,100 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2022-07-25 13:29:10,110 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal (1). Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2022-07-25 13:29:10,412 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-25 13:31:32,595 [ 1] WARN  Unity: Assets/Scripts/GameObject/MainPlayerCamera.cs(8,19): warning CS0108: `MainPlayerCamera.camera' hides inherited member `UnityEngine.Component.camera'. Use the new keyword if hiding was intended
+
+2022-07-25 13:31:32,611 [ 1] WARN  Unity: Assets/Scripts/GameObject/NPCController.cs(12,25): warning CS0108: `NPCController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
+
+2022-07-25 13:31:32,628 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(19,16): warning CS0649: Field `EntityController.rotation' is never assigned to, and will always have its default value
+
+2022-07-25 13:31:32,629 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(22,16): warning CS0414: The private field `EntityController.lastRotation' is assigned but its value is never used
+
+2022-07-25 13:31:32,648 [ 1] WARN  Unity: Assets/Scripts/UI/QuestSystem/UIQuestItem.cs(29,10): warning CS0414: The private field `UIQuestItem.isEquiped' is assigned but its value is never used
+
+2022-07-25 13:31:32,650 [ 1] WARN  Unity: Assets/Scripts/UI/QuestSystem/UIQuestStatus.cs(9,28): warning CS0414: The private field `UIQuestStatus.questStatus' is assigned but its value is never used
+
+2022-07-25 13:31:32,672 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(22,32): warning CS0219: The variable `allTeleporters' is assigned but its value is never used
+
